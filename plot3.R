@@ -11,7 +11,7 @@ powerData$Global_active_power <- as.numeric(powerData$Global_active_power);
 dateTime <- strptime(paste(powerData$Date, powerData$Time), format="%d/%m/%Y %H:%M:%S");
 
 ## Set the graphics device to the desired file.
-png(file="Plot3.png", width=480, height=480);
+png(file="plot3.png", width=480, height=480);
 
 
 ## Convert the desired display data to numeric.

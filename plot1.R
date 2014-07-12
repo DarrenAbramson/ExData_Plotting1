@@ -8,7 +8,7 @@ powerData <- subset(powerData, powerData$Date == "1/2/2007" | powerData$Date == 
 powerData$Global_active_power <- as.numeric(powerData$Global_active_power);
 
 ## Set the graphics device to the desired file.
-png(file="Plot1.png", width=480, height=480);
+png(file="plot1.png", width=480, height=480);
 
 ## Plot the histogram with appropriate labels and color.
 hist(subsetPowerData$Global_active_power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red");

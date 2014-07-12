@@ -16,7 +16,7 @@ powerData$Global_reactive_power <- as.numeric(powerData$Global_reactive_power);
 dateTime <- strptime(paste(powerData$Date, powerData$Time), format="%d/%m/%Y %H:%M:%S");
 
 ## Set the graphics device to the desired file.
-png(file="Plot4.png", width=480, height=480);
+png(file="plot4.png", width=480, height=480);
 
 ## Set up for multiple plots on the graphics device.
 par(mfrow=c(2,2));
